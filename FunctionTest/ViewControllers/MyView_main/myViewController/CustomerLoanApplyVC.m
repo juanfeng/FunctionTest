@@ -7,6 +7,7 @@
 //
 
 #import "CustomerLoanApplyVC.h"
+#import "CustomerLoanApplyCell.h"
 
 @interface CustomerLoanApplyVC ()
 
@@ -84,12 +85,10 @@
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    static NSString *cellId = @"CellId";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    static NSString *cellId = @"indertiferId";
+    CustomerLoanApplyCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        [self configularCell:cell andIndexPath:indexPath];
+        cell = [[CustomerLoanApplyCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
