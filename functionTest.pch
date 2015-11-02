@@ -1,0 +1,54 @@
+//
+//  functionTest.pch
+//  FunctionTest
+//
+//  Created by zzj on 15/9/14.
+//  Copyright (c) 2015年 rongyu100. All rights reserved.
+//
+
+#ifndef FunctionTest_functionTest_pch
+#define FunctionTest_functionTest_pch
+
+#import "define.h"
+#import "MMProgressHUD.h"
+#import "AESCrypt.h"
+#import "AFNetworking.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "AppDelegate.h"
+#import "RYLoginViewController.h"
+#import "ForgetPasswordPhoneVC.h"
+#import "ForgetPasswordVerificationVC.h"
+#import "TabBarViewController.h"
+#import "Tool.h"
+#import "RYProfessionalKnowledgecellSeekVC.h"
+#import "FinanceProductDetailVC.h"
+#import "LoanApplyListVC.h"
+#import "MessageMainVC.h"
+#import "ForceAlertPasswordVC.h"
+#import "ButlerForceAlertPasswordVC.h"
+#import "MyMainViewController.h"
+#import "TestVC.h"
+
+//autoLayout 布局头文件
+#import "MASCompositeConstraint.h"
+#import "MASConstraint+Private.h"
+#import "MASConstraint.h"
+#import "MASConstraintMaker.h"
+#import "MASLayoutConstraint.h"
+#import "Masonry.h"
+#import "MASUtilities.h"
+#import "MASViewAttribute.h"
+#import "MASViewConstraint.h"
+#import "NSArray+MASAdditions.h"
+#import "NSArray+MASShorthandAdditions.h"
+#import "View+MASAdditions.h"
+#import "View+MASShorthandAdditions.h"
+
+#import "UIViewExt.h"
+
+
+//修改UI
+#define MODIFY_UI 1
+#define MAIN_LOG (MODIFY_UI ? @"pkStar1" : @"pkStar2")
+
+#endif

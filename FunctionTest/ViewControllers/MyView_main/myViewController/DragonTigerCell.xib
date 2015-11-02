@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DragonTigerCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CowCopy.png" translatesAutoresizingMaskIntoConstraints="NO" id="Slb-YB-vtT">
+                        <rect key="frame" x="13" y="10" width="40" height="40"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="等级" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGw-Zm-XtJ">
+                        <rect key="frame" x="1" y="0.0" width="60" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="3Q4-sP-9GY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="授信成功的申请" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7E-OA-4gJ">
+                        <rect key="frame" x="61" y="22" width="100" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="wgn-ih-wEE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90天新增" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gct-Pp-gef">
+                        <rect key="frame" x="238" y="22" width="82" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36万元" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8b5-AE-5Lv">
+                        <rect key="frame" x="161" y="22" width="77" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="77" id="uJn-pw-xYZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="H7E-OA-4gJ" firstAttribute="leading" secondItem="qGw-Zm-XtJ" secondAttribute="trailing" id="47f-Sr-eJb"/>
+                    <constraint firstItem="8b5-AE-5Lv" firstAttribute="centerY" secondItem="qGw-Zm-XtJ" secondAttribute="centerY" constant="0.5" id="8zU-zq-yKY"/>
+                    <constraint firstItem="gct-Pp-gef" firstAttribute="leading" secondItem="8b5-AE-5Lv" secondAttribute="trailing" id="IuT-t5-1dD"/>
+                    <constraint firstAttribute="bottom" secondItem="qGw-Zm-XtJ" secondAttribute="bottom" id="Pkc-DD-Lc8"/>
+                    <constraint firstItem="qGw-Zm-XtJ" firstAttribute="centerY" secondItem="gct-Pp-gef" secondAttribute="centerY" constant="-0.5" id="YKl-sf-5hy"/>
+                    <constraint firstItem="8b5-AE-5Lv" firstAttribute="leading" secondItem="H7E-OA-4gJ" secondAttribute="trailing" id="e2l-GM-vU9"/>
+                    <constraint firstAttribute="trailing" secondItem="gct-Pp-gef" secondAttribute="trailing" id="f7i-RR-eVf"/>
+                    <constraint firstItem="qGw-Zm-XtJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qUa-9e-c2G"/>
+                    <constraint firstItem="qGw-Zm-XtJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="vhr-km-3S0"/>
+                    <constraint firstItem="H7E-OA-4gJ" firstAttribute="centerY" secondItem="qGw-Zm-XtJ" secondAttribute="centerY" constant="0.5" id="x1Z-Yy-ooE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="allCountLabel" destination="8b5-AE-5Lv" id="oOO-RZ-HZZ"/>
+                <outlet property="nameLabel" destination="H7E-OA-4gJ" id="6uc-zv-L53"/>
+                <outlet property="numberLabel" destination="gct-Pp-gef" id="La8-cg-v1R"/>
+                <outlet property="rankImgView" destination="Slb-YB-vtT" id="z2o-gv-Lte"/>
+                <outlet property="rankLabel" destination="qGw-Zm-XtJ" id="YkA-A2-6fm"/>
+            </connections>
+            <point key="canvasLocation" x="219" y="171"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CowCopy.png" width="74" height="90"/>
+    </resources>
+</document>
